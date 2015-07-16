@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		78B17D311B578CCE0006B48E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B17D301B578CCE0006B48E /* AppDelegate.swift */; };
-		78B17D331B578CCE0006B48E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B17D321B578CCE0006B48E /* ViewController.swift */; };
 		78B17D361B578CCE0006B48E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B17D341B578CCE0006B48E /* Main.storyboard */; };
 		78B17D381B578CCE0006B48E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B17D371B578CCE0006B48E /* Images.xcassets */; };
 		78B17D3B1B578CCE0006B48E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78B17D391B578CCE0006B48E /* LaunchScreen.xib */; };
 		78B17D471B578CCE0006B48E /* PurchaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B17D461B578CCE0006B48E /* PurchaseViewControllerTests.swift */; };
+		78B17D511B578D330006B48E /* JALPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B17D501B578D330006B48E /* JALPurchaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		78B17D2B1B578CCE0006B48E /* PurchaseViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurchaseViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B17D2F1B578CCE0006B48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78B17D301B578CCE0006B48E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		78B17D321B578CCE0006B48E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78B17D351B578CCE0006B48E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78B17D371B578CCE0006B48E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		78B17D3A1B578CCE0006B48E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		78B17D401B578CCE0006B48E /* PurchaseViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurchaseViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B17D451B578CCE0006B48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78B17D461B578CCE0006B48E /* PurchaseViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewControllerTests.swift; sourceTree = "<group>"; };
+		78B17D501B578D330006B48E /* JALPurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JALPurchaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				78B17D301B578CCE0006B48E /* AppDelegate.swift */,
-				78B17D321B578CCE0006B48E /* ViewController.swift */,
 				78B17D341B578CCE0006B48E /* Main.storyboard */,
 				78B17D371B578CCE0006B48E /* Images.xcassets */,
 				78B17D391B578CCE0006B48E /* LaunchScreen.xib */,
 				78B17D2E1B578CCE0006B48E /* Supporting Files */,
+				78B17D501B578D330006B48E /* JALPurchaseViewController.swift */,
 			);
 			path = PurchaseViewController;
 			sourceTree = "<group>";
@@ -156,6 +156,7 @@
 		78B17D231B578CCE0006B48E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JAL;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Jason Lew";
 				TargetAttributes = {
@@ -212,8 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B17D331B578CCE0006B48E /* ViewController.swift in Sources */,
 				78B17D311B578CCE0006B48E /* AppDelegate.swift in Sources */,
+				78B17D511B578D330006B48E /* JALPurchaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PurchaseViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PurchaseViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
